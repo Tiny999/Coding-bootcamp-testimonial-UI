@@ -10,7 +10,7 @@ body{
 
 
 .container{
-  max-width: 1440px;
+  max-width: 95%;
   height: 650px;
   background: url(./images/pattern-curve.svg) no-repeat bottom left;
   margin: auto;
