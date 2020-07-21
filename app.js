@@ -1,6 +1,11 @@
-function loadNext(){
+const testimonial = document.getElementById('testimonial');
 
-  document.getElementById('testimonial').innerHTML = `
+
+function loadNext(){
+  testimonial.style.opacity = 0;
+
+  setTimeout(function(){
+    document.getElementById('testimonial').innerHTML = `
     <div id="testimonial">
       <div class="text-container">
         <p class="comment">"If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer."</p>
@@ -17,13 +22,19 @@ function loadNext(){
         </div>
       </div>
     </div>
-  `;
-}
+    `;
+
+    testimonial.style.opacity = 1;
+  }, 500);
+
+};
 
 
 function loadPrevious(){
+  testimonial.style.opacity = 0
 
-  document.getElementById('testimonial').innerHTML = `
+  setTimeout(function(){
+    document.getElementById('testimonial').innerHTML = `
     <div id="testimonial" class="tanya">
       <div class="text-container">
         <p class="comment">"I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about the future."</p>
@@ -40,5 +51,8 @@ function loadPrevious(){
         </div>
       </div>
     </div>
-  `;
-}
+    `;
+
+    testimonial.style.opacity = 1;
+  }, 500);
+};
